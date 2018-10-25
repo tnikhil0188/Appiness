@@ -1,5 +1,3 @@
-# angular2-registration-login-example
-
 Angular 2+ Task Demo
 Steps to run the application:
 
