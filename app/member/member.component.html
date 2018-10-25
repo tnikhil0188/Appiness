@@ -1,0 +1,11 @@
+﻿<div class="col-md-6 col-md-offset-3">
+    <h1>Hi Member {{currentUser.firstName}}!</h1>
+    <p>Logged Details(Username/Pwd): </p>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.username}} {{user.password}}
+            - <a (click)="deleteUser(user.id)">Delete</a>
+        </li>
+    </ul>
+    <p><a [routerLink]="['/login']">Logout</a></p>
+</div>
